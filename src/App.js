@@ -1,18 +1,33 @@
 import React, { Component } from 'react';
-import './App.css';
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import India from './Components/India'
+import World from './Components/World'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter as Router, Link, Switch, Route} from "react-router-dom";
+
 
 class App extends Component{
   constructor(){
     super();
   }
-}
+
 
   render(){
       return(
-        <div>
-          Welcome
+        <div className="container-fluid">       
+          <Router>
+          <Header></Header>
+              <Switch>
+                  <Route exact path="/"> <India/> </Route>
+                  <Route path="/india"> <India/> </Route>
+                  <Route path="/world"> <World/> </Route>
+              </Switch>
+            <Footer></Footer>
+          </Router>
+          
         </div>
-      )
+      );
   }
-
+}
 export default App;
