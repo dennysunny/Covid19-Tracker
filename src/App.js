@@ -4,13 +4,10 @@ import Footer from './Components/Footer'
 import India from './Components/India'
 import World from './Components/World'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter as Router, Link, Switch, Route} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 
 class App extends Component{
-  constructor(){
-    super();
-  }
 
 
   render(){

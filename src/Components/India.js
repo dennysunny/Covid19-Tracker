@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Card, CardDeck} from 'react-bootstrap'
+import { Card} from 'react-bootstrap'
 import State from './State';
 import axios from 'axios';
 
@@ -25,7 +25,7 @@ class India extends Component{
   
               <div className="row">
                     <div className="col-md-12">
-                        <img src= "https://www.countryflags.io/in/shiny/64.png"/>
+                        <img src= "https://www.countryflags.io/in/shiny/64.png" alt=""/>
                         <h3>INDIA</h3>
                     </div>
 
@@ -82,7 +82,7 @@ class India extends Component{
                             <Card className="badge badge-danger" style={{ width: '18rem' }}>
                                 {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
                                 <Card.Body className="text-center">
-                                    <Card.Title>DETHS</Card.Title>
+                                    <Card.Title>DEATHS</Card.Title>
                                     <h3>{this.state.data.deaths}</h3>
                                     <Card.Text>
                                     TODAY : {this.state.data.todayDeaths}   </Card.Text>

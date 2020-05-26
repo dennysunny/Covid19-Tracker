@@ -33,7 +33,7 @@ componentDidMount(){
                     {
                         keys.map((itm,ky) => {
                             let districts = this.state.StateData[itm].districtData;
-                            let district_keys = Object.keys(districts);
+                            //let district_keys = Object.keys(districts);
 
                             let total_active = 0
                             let total_confirmed = 0
@@ -57,7 +57,7 @@ componentDidMount(){
                                 <Card>
                                 <Card.Header>
                                 <Accordion.Toggle as={Button} variant="dark" eventKey={ky}>
-                                    {itm} - <span className="btn-primary p-1">TOTAL CASES : {total_confirmed}</span> | <span className="btn-warning p-1">ACTIVE : {total_active}</span> |  <span className="btn-success p-1">RECOVERED : {total_recover}</span> | <span className="btn-danger p-1">DETHS : {total_deths}</span>
+                                    {itm} - <span className="btn-primary p-1">TOTAL CASES : {total_confirmed}</span> | <span className="btn-warning p-1">ACTIVE : {total_active}</span> |  <span className="btn-success p-1">RECOVERED : {total_recover}</span> | <span className="btn-danger p-1">DEATHS : {total_deths}</span>
                                 </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey={ky}>
@@ -69,7 +69,7 @@ componentDidMount(){
                                                 <td>Confirmed</td>
                                                 <td>Active</td>
                                                 <td>Recoverd</td>
-                                                <td>Deths</td>
+                                                <td>Deaths</td>
                                             </tr>
                                         </thead>
                                         <tbody>

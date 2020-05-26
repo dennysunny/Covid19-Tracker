@@ -12,7 +12,7 @@ class Header extends Component{
 
               <Nav className="mr-auto">
                 <Link className="nav-link" to="/india">INDIA</Link>
-                <Link className="nav-link" to="/world">WORLD</Link>
+                <Link className="nav-link" to="/world">KERALA</Link>
               </Nav>
   
             </Navbar.Collapse>
